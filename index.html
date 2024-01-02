@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank of Malabar</title>
+    <link rel="icon" type="image/x-icon" href="bank-favicon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- LOGIN PAGE -->
+
+    <div class="container--one">
+      <img class="bank--logo" src="bank-logo.png" alt="bank logo" />
+      <label class="login--label" for="username">USERNAME</label>
+      <input id="username" type="text" />
+
+      <label class="login--label" for="password">PASSWORD</label>
+      <input id="password" type="text" />
+      <button class="btn--arrow-right btn--login">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="svg--arrow-right"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <!-- ACCOUNT INFO PAGE -->
+    <main>
+      <div class="container--two zero-sized-container">
+        <img src="bank-symbol-color.png" alt="bank-logo" class="bank-symbol" />
+        <nav class="navigation">
+          <a
+            class="btn--nav terms-link"
+            href="Loan-terms-and-conditions.pdf"
+            download="Loan-terms-and-conditions"
+            >Loan</a
+          >
+          <button class="btn--nav btn--log-out">Log out</button>
+        </nav>
+
+        <div class="bank-logo"></div>
+        <!-- RECENT CONTACTS -->
+        <div class="container--recent-contacts">
+          <div class="contact">
+            <ion-icon
+              class="svg--contact"
+              name="person-circle-outline"
+            ></ion-icon>
+            <p class="name">Sheeba</p>
+          </div>
+          <div class="contact">
+            <ion-icon
+              class="svg--contact"
+              name="person-circle-outline"
+            ></ion-icon>
+            <p class="name">Venu</p>
+          </div>
+          <div class="contact">
+            <ion-icon
+              class="svg--contact"
+              name="person-circle-outline"
+            ></ion-icon>
+            <p class="name">Namitha</p>
+          </div>
+          <div class="contact">
+            <ion-icon
+              class="svg--contact"
+              name="person-circle-outline"
+            ></ion-icon>
+            <p class="name">Subhash</p>
+          </div>
+        </div>
+        <!-- BALANCE -->
+        <div class="container--balance">
+          <span class="balance--text">BALANCE</span>
+          <p class="balance">₹48,234</p>
+          <span class="balance--date">As of 17/08/2023</span>
+        </div>
+        <!-- MOVEMENTS -->
+        <div class="container--movements">
+          <div class="movements--row">
+            <div class="movements--type movements--type--deposit">
+              2 deposit
+            </div>
+            <div class="movements--date">3 days ago</div>
+            <div class="movements--value">+4800</div>
+          </div>
+          <div class="movements--row">
+            <div class="movements--type movements--type--withdrawal">
+              1 withdrawal
+            </div>
+            <div class="movements--date">2 days ago</div>
+            <div class="movements--value">-3000</div>
+          </div>
+        </div>
+        <!-- PERSONAL ASSISTANT -->
+        <div class="container--PA">
+          <div class="chat-box">Hey there! iam IO your chat assistant</div>
+          <img src="blink-bot.gif" alt="PA" class="personal--assistant" />
+        </div>
+        <!-- TRANSFER MONEY-->
+        <div class="operation container--transfer">
+          <h2>Transfer money</h2>
+          <form class="form form--transfer">
+            <input type="text" class="form--input form--input--to" />
+            <input type="number" class="form--input form--input--amount" />
+            <button class="form--btn form--btn--transfer">&rarr;</button>
+            <label class="form--label">Transfer to</label>
+            <label class="form--label">Amount</label>
+          </form>
+        </div>
+        <!-- REQUEST LOAN  -->
+        <div class="operation container--loan">
+          <h2>Request loan</h2>
+          <form class="form form--loan">
+            <input type="number" class="form--input form--input--loan-amount" />
+            <button class="form--btn form--btn--loan">&rarr;</button>
+            <label class="form--label form--label--loan">Amount</label>
+          </form>
+        </div>
+        <!-- CLOSE ACCOUNT -->
+        <div class="operation container--close-account">
+          <h2>Close account</h2>
+          <form class="form form--close">
+            <input type="text" class="form--input form--input--user" />
+            <input
+              type="password"
+              maxlength="6"
+              class="form--input form--input--pin"
+            />
+            <button class="form--btn form--btn--close">&rarr;</button>
+            <label class="form--label">Confirm user</label>
+            <label class="form--label">Confirm PIN</label>
+          </form>
+        </div>
+        <!-- SUMMARY -->
+        <div class="container--summary">
+          <p class="summary--label">In</p>
+          <p class="summary--value summary--value--in">₹0000</p>
+          <p class="summary--label">Out</p>
+          <p class="summary--value summary--value--out">₹0000</p>
+          <p class="summary--label">Interest</p>
+          <p class="summary--value summary--value--interest">₹0000</p>
+        </div>
+        <p class="logout-timer">
+          You will be logged out in <span class="timer">05:00</span>
+        </p>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
